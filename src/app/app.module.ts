@@ -40,6 +40,8 @@ import { TranslationLoaderService, TranslationServicesModule } from 'gg-translat
     NgbModule.forRoot(),
     TranslateModule.forRoot(),
     RouterModule.forRoot([
+      { path: "home", component: HomeComponent },
+      { path: "dashboard", component: OtherComponent }      
     ])    
     
   ],
