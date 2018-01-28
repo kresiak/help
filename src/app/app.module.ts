@@ -22,12 +22,17 @@ registerLocaleData(localeFr, 'fr');  // https://angular.io/guide/i18n#i18n-pipes
 import { HomeComponent} from './home.component'
 import { OtherComponent } from './other.component';
 
+import { BasicDataServicesModule } from 'gg-basic-data-services'
+import { UiModule } from 'gg-ui'
+import { SearchHandleDataModule } from 'gg-search-handle-data'
+import { TranslationLoaderService, TranslationServicesModule } from 'gg-translation'
 
 @NgModule({
   declarations: [
     AppComponent, HomeComponent, OtherComponent
   ],
   imports: [
+    UiModule.forRoot(), SearchHandleDataModule.forRoot(), TranslationServicesModule.forRoot(), BasicDataServicesModule.forRoot(),    
     BrowserModule,
     FormsModule, ReactiveFormsModule,
     HttpClientModule,
