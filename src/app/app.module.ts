@@ -19,11 +19,13 @@ import localeFr from '@angular/common/locales/fr';
 
 registerLocaleData(localeFr, 'fr');  // https://angular.io/guide/i18n#i18n-pipes      //A5
 
+import { HomeComponent} from './home.component'
+import { OtherComponent } from './other.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, HomeComponent, OtherComponent
   ],
   imports: [
     BrowserModule,
