@@ -11,6 +11,14 @@ import { Ng2AutoCompleteModule } from 'ng2-auto-complete';
 import { TranslateModule, TranslateLoader, TranslateService  } from '@ngx-translate/core'
 
 
+import { locale as english } from './locale/en'
+import { locale as french } from './locale/fr'
+
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr';
+
+registerLocaleData(localeFr, 'fr');  // https://angular.io/guide/i18n#i18n-pipes      //A5
+
 
 
 @NgModule({
@@ -31,4 +39,26 @@ import { TranslateModule, TranslateLoader, TranslateService  } from '@ngx-transl
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private translateService: TranslateService ) {
+    this.translateService.addLangs(["en", "fr"])
+    this.translateService.setDefaultLang('en')
+    this.translateService.use('fr')        
+
+    var loadTranslations= (...args: ILocale[]): void => {
+      const locales = [...args];
+      locales.forEach((locale) => {
+        this.translateService.setTranslation(locale.lang, locale.data, true);
+      });
+    }
+    
+    loadTranslations(english, french)
+
+  }  
+
+}
+
+interface ILocale {
+  lang: string;
+  data: Object;
+}
