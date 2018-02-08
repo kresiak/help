@@ -28,11 +28,13 @@ export class AppComponent implements OnInit {
         {
             route: '/home',
             title: 'Home',
+            titleKey: 'MENU.HOME',
             active: false
         },
         {
             route: '/dashboard',
             title: 'Dashboard',
+            titleKey: 'MENU.DASHBOARD',
             active: false
         }
         ]]);
