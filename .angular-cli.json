@@ -10,7 +10,12 @@
       "assets": [
         "assets",
         "favicon.ico",
-        "images"
+        "images",
+        {
+          "glob": "**/*",
+          "input": "../node_modules/gg-ui/images/",
+          "output": "./images/"          
+        }
       ],
       "index": "index.html",
       "main": "main.ts",
