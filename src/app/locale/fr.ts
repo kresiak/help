@@ -183,6 +183,13 @@ export const locale = {
         "ERROR": {
             "NO LOGIN": "désolé: vous n'êtes pas connecté"
         },
+        "HELP": {
+            "LABEL": {
+                "DESCRIPTION": "description",
+                "EMPLOYEE": "employé",
+                "PROGRAM": "programme"
+            }
+        },
         "OTP": {
             "WARNING": {
                 "MONTHS BEFORE END": "nombre de mois avant la fin:",
