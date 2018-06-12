@@ -20,7 +20,7 @@ import localeFr from '@angular/common/locales/fr';
 registerLocaleData(localeFr, 'fr');  // https://angular.io/guide/i18n#i18n-pipes      //A5
 
 import { HomeComponent} from './home.component'
-import { OtherComponent } from './other.component';
+import { OtherComponent } from './message-enter.component';
 
 import { BasicDataServicesModule } from 'gg-basic-data-services'
 import { UiModule } from 'gg-ui'

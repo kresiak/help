@@ -188,6 +188,16 @@ export const locale = {
                 "DESCRIPTION": "description",
                 "EMPLOYEE": "employé",
                 "PROGRAM": "programme"
+            },
+            "COLUMN": {
+                "WHEN": "quand",
+                "PROGRAM": "programme",
+                "DESCRIPTION": "description",
+                "NAME": "nom"
+            },
+            "MENU": {
+                "LIST OF MESSAGES": "Liste de messages",
+                "NEW MESSAGE": "Nouveau message"
             }
         },
         "OTP": {
